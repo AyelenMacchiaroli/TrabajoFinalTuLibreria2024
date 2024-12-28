@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Librería</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Tu Librería</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <header>
+                <img src="img/libro.jpg" alt="Logo de Tu Librería" class="logo-imagen">
+                <h1 class="logo"></h1>
+            </header>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Tu Librería</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="aventura" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Aventura</button>
+                    </li>
+                    <li>
+                        <button id="novelas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Novelas</button>
+                    </li>
+                    <li>
+                        <button id="terror" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Terror</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button id="sobre-nosotros-btn" class="boton-menu boton-sobre-nosotros">
+                            <i class="bi bi-info-circle-fill"></i> Sobre nosotros
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="sidebar">
+                    <section id="contacto" class="contacto">
+                        <h2>Contáctanos</h2>
+                        <form id="form-contacto">
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                
+                    <section id="reseñas-clientes" class="reseñas-clientes">
+                        <h2>Reseñas de Nuestros Clientes</h2>
+                        <div id="contenedor-reseñas">
+                            <blockquote>“La experiencia de compra fue excelente.” - María P.</blockquote>
+                            <blockquote>“Siempre encuentro libros únicos y de calidad.” - Carlos T.</blockquote>
+                            <blockquote>“Entrega rápida y atención al cliente impecable.” - Lucía G.</blockquote>
+                        </div>
+                    </section>
+                </div>
+                
+                <div id="sobre-nosotros-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Sobre Nosotros</h2>
+                        <p>Somos una librería dedicada a ofrecer una amplia variedad de libros para todos los gustos. Desde novelas de aventuras hasta obras clásicas, nos esforzamos por brindar la mejor experiencia a nuestros clientes.</p>
+                        
+                        <h3>Contacto</h3>
+                        <p><strong>Teléfono:</strong> 123-456-7890</p>
+                        <p><strong>Email:</strong> contacto@libreria.com</p>
+                
+                        <h3>Ubicación</h3>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.83543450936!2d-122.4216787846812!3d37.77492927975966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f7bff57%3A0xc00294e5cd2b87a2!2sSan%20Francisco%2C%20CA%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1691501959621!5m2!1ses!2smx"
+                                width="100%"
+                                height="200"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                
+                        <h3>Redes Sociales</h3>
+                        <p>
+                            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        </p>
+                    </div>
+                </div>   
+            </nav>
+            <footer>
+                <p class="texto-footer">©2024TuLibrería</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+            
+        </main>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

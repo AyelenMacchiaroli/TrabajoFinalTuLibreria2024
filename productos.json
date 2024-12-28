@@ -1,0 +1,112 @@
+[
+    {
+        "id": "Aventura-01",
+        "titulo": "El señor de los anillos",
+        "imagen": "img/Aventura/El señor de los anillos.png",
+        "categoria": {
+            "nombre": "Aventura",
+            "id": "aventura"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Aventura-02",
+        "titulo": "Juego de tronos",
+        "imagen": "img/Aventura/Juego de tronos.png",
+        "categoria": {
+            "nombre": "Aventura",
+            "id": "aventura"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Aventura-03",
+        "titulo": "Narnia, El leon, La bruja y El armario",
+        "imagen": "img/Aventura/Narnia, El leon, La bruja y El armario.png",
+        "categoria": {
+            "nombre": "Aventura",
+            "id": "aventura"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Novelas-01",
+        "titulo": "Alicia en el pais de las maravillas 01",
+        "imagen": "img/Novelas/Alicia en el pais de las maravillas.png",
+        "categoria": {
+            "nombre": "Novelas",
+            "id": "novelas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Novelas-02",
+        "titulo": "El otoño de un patriarca",
+        "imagen": "img/Novelas/El otoño de un patriarca.png",
+        "categoria": {
+            "nombre": "Novelas",
+            "id": "novelas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Novelas-03",
+        "titulo": "La mala hora 03",
+        "imagen": "img/Novelas/La mala hora.png",
+        "categoria": {
+            "nombre": "Novelas",
+            "id": "novelas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Novelas-04",
+        "titulo": "Los juicios de Salem 04",
+        "imagen": "img/Novelas/Los juicios de Salem.png",
+        "categoria": {
+            "nombre": "Novelas",
+            "id": "novelas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Terror-01",
+        "titulo": "Dracula 01",
+        "imagen": "img/Terror/Dracula.png",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Terror-02",
+        "titulo": "El visitante 02",
+        "imagen": "img/Terror/El visitante.png",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "Terror"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Terror-03",
+        "titulo": "La madre 03",
+        "imagen": "img/Terror/La madre.png",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Terror-04",
+        "titulo": "Los juicios de Salem 04",
+        "imagen": "img/Terror/Los juicios de Salem.png",
+        "categoria": {
+            "nombre": "Terror",
+            "id": "terror"
+        },
+        "precio": 1000
+    }
+]
